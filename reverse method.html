@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="text">
+
+    <h1 id="demo">Rsult</h1>
+
+    <button id="btn" onclick="reverseM()">click</button>
+
+    <script>
+        var txt = document.getElementById("text");
+        var rBox = document.getElementById("demo");
+
+
+        var totals = ["Banana", "Orange", "Apple", "Mango"];
+        totals.sort()
+        totals.reverse();
+
+        rBox.innerHTML = totals;
+
+        function reverseM() {
+
+            if (txt.value == String || txt.value == Number || txt.value == Array) {
+                txt.sort()
+
+                rBox.innerHTML = txt.value.reverse();
+            }
+        }
+    </script>
+</body>
+
+</html>
